@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <h1>Student Dashboard</h1>
+
+    <h2>
+        Welcome,
+        <span th:text="${student.name}"></span>!
+    </h2>
+
+    <p>Welcome to Student Course Registration System</p>
+
+    <div class="menu">
+        <a href="/courses">View Available Courses</a>
+        <a href="/my-courses">My Registered Courses</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+</div>
+
+</body>
+</html>

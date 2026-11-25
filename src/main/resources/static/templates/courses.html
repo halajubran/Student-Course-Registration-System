@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Available Courses</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <h1>Available Courses</h1>
+
+    <p th:if="${param.error}" class="error">
+        You are already registered or the course does not exist!
+    </p>
+
+    <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Instructor</th>
+            <th>Credit Hours</th>
+            <th>Action</th>
+        </tr>
+
+        <tr th:each="course : ${courses}">
+            <td th:text="${course.name}"></td>
+            <td th:text="${course.instructor}"></td>
+            <td th:text="${course.creditHours}"></td>
+            <td>
+                <form th:action="@{/register/{id}(id=${course.id})}"
+                      method="post">
+                    <button type="submit">Register</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <a href="/dashboard">Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.login-container {
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+}
+
+label {
+    display: block;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+a {
+    color: blue;
+    display: inline-block;
+    margin: 10px;
+}
+
+.dashboard {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 12px;
+    background-color: #e8eef5;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
