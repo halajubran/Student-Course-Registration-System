@@ -5,7 +5,7 @@ package com.example.registration.controller;
 import com.example.registration.model.Student;
 import com.example.registration.service.RegistrationService;
 
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
